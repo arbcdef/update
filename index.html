@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>KAPEIN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
 </head>
 <body>
-    <h1>KAPEIN SHOP</h1>
-    <img src="https://placehold.co/600x300?text=Suasana+Cafe+Nyaman" alt="Ilustrasi">
-        
-    <ul>
-        <li>Menu Special</li>
-        <li>Minuman Coffee
-            <ul>
-                <li>Espresso</li>
-                <li>Latte</li>
-                <li>Cappuccino</li>
-            </ul>
-        </li>
-        
-        <table border="1">
-            <tr>
-                <td>Menu</td> <td>Harga</td>
-            </tr>
-            <tr>
-                <td>Americano</td> <td>20K</td>
-            </tr>
-            <tr>
-                <td>Caffe Latte</td> <td>25K</td>
-            </tr>
-        </table>
-    </ul>
-    
-    <a href="">Link Lokasi</a>
+  <h1>Library Management System</h1>
+  <table border="1">
+    <tr>
+      <th>Kategori</th> <th>Jumlah Buku</th> <th>Rak</th>
+    </tr>
+    <tr>
+      <td>Information System</td> <td>15</td> <td>3B</td>
+    </tr>
+    <tr>
+      <td>Matematika</td> <td>14</td> <td>1A</td>
+    </tr>
+  </table>
+
+  <p>Aturan Peminjamna</p>
+  <ul>
+    <li>Maksimal 3 Buku
+      <ul>
+        <li>Durasi 7 Hari</li>
+      </ul>
+    </li>
+  </ul>
+
+<h3>Tambah Koleksi Buku</h3>
+
+<form action="">
+    <label>Judul Buku:</label> <br>
+    <input type="text" placeholder="Masukkan judul buku"> 
+    <br><br>
+
+    <label>Tanggal Masuk:</label> <br>
+    <input type="date"> 
+    <br><br>
+
+    <button type="submit">Simpan ke Database</button>
+</form>
+  
 </body>
 </html>
