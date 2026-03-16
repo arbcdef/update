@@ -1,52 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulir</title>
-  </head>
-  <body>
-    <h1>Formulir Pendaftaran Rental Kamera</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+</head>
+<body>
+  <h1>Order Pesanan</h1>
 
-    <form action="">
-      <div>
-        <label for="nama">Nama Penyewa</label>
-        <input type="text" id="nama" />
-      </div>
+  <form action="">
+    <div>
+      <label for="nama">Nama Pemesan</label>
+      <input type="text" id="nama">
+    </div>
 
-      <div>
-        <label for="list">Pilihan Kamera</label>
-        <select name="list" id="list">
-          <option value="sony1">Sony A7IV</option>
-          <option value="sony2">Sony A6400</option>
-          <option value="lumix">Lumix S5</option>
-        </select>
-      </div>
+    <div>
+      <label for="menu">Pilih Menu</label>
+      <select name="menu" id="menu">
+        <option value="NG">Nasi Goreng</option>
+        <option value="MG">Mie Goreng</option>
+        <option value="AB">Ayam Bakar</option>
+      </select>
+    </div>
 
-      <div>
-        <label for="">Jenis Kamera</label>
-        <input type="checkbox" id="35" />
-        <label for="35">35mm Prime</label>
-        <input type="checkbox" id="24" />
-        <label for="24">24-70mm Zoom</label>
-        <input type="checkbox" id="85" />
-        <label for="85">85mm Portrait</label>
-      </div>
+    <div>
+      <label for="topping">Topping</label>
+      <input type="checkbox" name="topping" id="telur">
+      <label for="telur">Telur</label>
+      <input type="checkbox" name="topping" id="keju">
+      <label for="keju">Keju</label>
+      <input type="checkbox" name="topping" id="kerupuk">
+      <label for="kerupuk">Kerupuk</label>
+    </div>
 
-      <div>
-        <label for="">Durasi Sewa</label>
-        <input type="radio" name="durasi" id="12jam" />
-        <label for="12jam">12 Jam</label>
-        <input type="radio" name="durasi" id="24jam" />
-        <label for="24jam">24 Jam</label>
-      </div>
+    <div>
+      <label for="lvl">Level Pedas</label>
+      <input type="radio" name="lvl" id="pedas">
+      <label for="pedas">Pedas</label>
+      <input type="radio" name="lvl" id="sedang">
+      <label for="sedang">Sedang</label>
+      <input type="radio" name="lvl" id="tidak">
+      <label for="tidak">Tidak Pedas</label>
+    </div>
 
-      <div>
-        <label for="KB">Kondisi Barang Saat Diterima</label>
-        <textarea name="Kondisi" id="KB"></textarea>
-      </div>
-
-      <button type="submit">Konfirmasi Sewa Kamera</button>
-    </form>
-  </body>
+    <button type="submit">Pesan Sekarang</button>
+  </form>
+  
+</body>
 </html>
