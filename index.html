@@ -3,59 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulir HIMA-SI</title>
+    <title>Formulir</title>
   </head>
   <body>
-    <h1>Formulir Anggota HIMA-SI</h1>
+    <h1>Formulir Pendaftaran Rental Kamera</h1>
+
     <form action="">
       <div>
-        <label for="nama">Nama Lengkap</label>
+        <label for="nama">Nama Penyewa</label>
         <input type="text" id="nama" />
-        <label for="NIM">NIM</label>
-        <input type="text" id="NIM" />
       </div>
 
       <div>
-        <label for="pw">Password Akun</label>
-        <input type="password" id="pw" required />
-      </div>
-
-      <br /><br />
-
-      <div>
-        <label for="Pk">Pilih Konsentrasi</label><br />
-        <select name="Pk" id="Pk">
-          <option value="wd">Web Developer</option>
-          <option value="md">Mobile Developer</option>
-          <option value="da">Data Analyst</option>
+        <label for="list">Pilihan Kamera</label>
+        <select name="list" id="list">
+          <option value="sony1">Sony A7IV</option>
+          <option value="sony2">Sony A6400</option>
+          <option value="lumix">Lumix S5</option>
         </select>
       </div>
 
-      <br /><br />
-
       <div>
-        <label for="anggota">Anggota Aktif</label>
-        <br />
-        <label for="aktif">Ya</label>
-        <input type="radio" name="aktif" id="anggota" />
-        <label for="off">Tidak</label>
-        <input type="radio" name="off" id="anggota" />
+        <label for="">Jenis Kamera</label>
+        <input type="checkbox" id="35" />
+        <label for="35">35mm Prime</label>
+        <input type="checkbox" id="24" />
+        <label for="24">24-70mm Zoom</label>
+        <input type="checkbox" id="85" />
+        <label for="85">85mm Portrait</label>
       </div>
 
-      <br /><br />
-
       <div>
-        <label for="">Divisi yang Diminati</label>
-        <br />
-        <label for="Pen">Pendidikan</label>
-        <input type="checkbox" id="Pen" />
-        <label for="SO">Seni dan Olahraga</label>
-        <input type="checkbox" id="SO" />
-        <label for="HL">Hubungan Luar</label>
-        <input type="checkbox" id="HL" />
+        <label for="">Durasi Sewa</label>
+        <input type="radio" id="12" />
+        <label for="12">12 Jam</label>
+        <input type="radio" id="24" />
+        <label for="24">24 Jam</label>
       </div>
 
-      <button type="submit">Simpan Data Anggota</button>
+      <div>
+        <label for="KB">Kondisi Barang Saat Diterima</label>
+        <textarea name="Kondisi" id="KB"></textarea>
+      </div>
+
+      <button type="submit">Konfirmasi Sewa Kamera</button>
     </form>
   </body>
 </html>
