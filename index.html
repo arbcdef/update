@@ -3,44 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library Management System</title>
+  <title>Formulir Praktikum</title>
 </head>
 <body>
-  <h1>Library Management System</h1>
-  <table border="1">
-    <tr>
-      <th>Kategori</th> <th>Jumlah Buku</th> <th>Rak</th>
-    </tr>
-    <tr>
-      <td>Information System</td> <td>15</td> <td>3B</td>
-    </tr>
-    <tr>
-      <td>Matematika</td> <td>14</td> <td>1A</td>
-    </tr>
-  </table>
+  <form action="">
+    <div>
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama"><br>
+      <label for="nim">NIM</label>
+      <input type="text" id="nim"><br>
+      <label for="pw">Password</label>
+      <input type="password" id="pw" required><br>
+      <br><br>
+    </div>
 
-  <p>Aturan Peminjamna</p>
-  <ul>
-    <li>Maksimal 3 Buku
-      <ul>
-        <li>Durasi 7 Hari</li>
-      </ul>
-    </li>
-  </ul>
+    <div>
+      <label for="Praktikum">Pemilihan Praktikum</label>
+      <select name="Praktikum" id="Praktikum">
+        <option value="al">Algoritma</option>
+        <option value="sd">Struktur Data</option>
+        <option value="bd">Basis Data</option>
+      </select>
+      <br><br>
+    </div>
 
-<h3>Tambah Koleksi Buku</h3>
+    <div>
+      <input type="radio" id="on" name="metode" value="online">
+      <label for="on">Online</label>
 
-<form action="">
-    <label>Judul Buku:</label> <br>
-    <input type="text" placeholder="Masukkan judul buku"> 
+      <input type="radio" id="off" name="metode" value="offline">
+      <label for="off">Offline</label>
+    </div>
     <br><br>
+  </form>
 
-    <label>Tanggal Masuk:</label> <br>
-    <input type="date"> 
-    <br><br>
-
-    <button type="submit">Simpan ke Database</button>
-</form>
+  <button type="submit">Daftar Praktikum</button>
   
 </body>
 </html>
