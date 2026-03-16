@@ -1,43 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulir Praktikum</title>
-</head>
-<body>
-  <form action="">
-    <div>
-      <label for="nama">Nama Lengkap</label>
-      <input type="text" id="nama"><br>
-      <label for="nim">NIM</label>
-      <input type="text" id="nim"><br>
-      <label for="pw">Password</label>
-      <input type="password" id="pw" required><br>
-      <br><br>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir HIMA-SI</title>
+  </head>
+  <body>
+    <h1>Formulir Anggota HIMA-SI</h1>
+    <form action="">
+      <div>
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" />
+        <label for="NIM">NIM</label>
+        <input type="text" id="NIM" />
+      </div>
 
-    <div>
-      <label for="Praktikum">Pemilihan Praktikum</label>
-      <select name="Praktikum" id="Praktikum">
-        <option value="al">Algoritma</option>
-        <option value="sd">Struktur Data</option>
-        <option value="bd">Basis Data</option>
-      </select>
-      <br><br>
-    </div>
+      <div>
+        <label for="pw">Password Akun</label>
+        <input type="password" id="pw" required />
+      </div>
 
-    <div>
-      <input type="radio" id="on" name="metode" value="online">
-      <label for="on">Online</label>
+      <br /><br />
 
-      <input type="radio" id="off" name="metode" value="offline">
-      <label for="off">Offline</label>
-    </div>
-    <br><br>
-  </form>
+      <div>
+        <label for="Pk">Pilih Konsentrasi</label><br />
+        <select name="Pk" id="Pk">
+          <option value="wd">Web Developer</option>
+          <option value="md">Mobile Developer</option>
+          <option value="da">Data Analyst</option>
+        </select>
+      </div>
 
-  <button type="submit">Daftar Praktikum</button>
-  
-</body>
+      <br /><br />
+
+      <div>
+        <label for="anggota">Anggota Aktif</label>
+        <br />
+        <label for="aktif">Ya</label>
+        <input type="radio" name="aktif" id="anggota" />
+        <label for="off">Tidak</label>
+        <input type="radio" name="off" id="anggota" />
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label for="">Divisi yang Diminati</label>
+        <br />
+        <label for="Pen">Pendidikan</label>
+        <input type="checkbox" id="Pen" />
+        <label for="SO">Seni dan Olahraga</label>
+        <input type="checkbox" id="SO" />
+        <label for="HL">Hubungan Luar</label>
+        <input type="checkbox" id="HL" />
+      </div>
+
+      <button type="submit">Simpan Data Anggota</button>
+    </form>
+  </body>
 </html>
