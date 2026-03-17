@@ -1,50 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order</title>
-</head>
-<body>
-  <h1>Order Pesanan</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Bootcamp</title>
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran Bootcamp</h1>
 
-  <form action="">
-    <div>
-      <label for="nama">Nama Pemesan</label>
-      <input type="text" id="nama">
-    </div>
+    <form action="">
+      <div>
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" />
+      </div>
 
-    <div>
-      <label for="menu">Pilih Menu</label>
-      <select name="menu" id="menu">
-        <option value="NG">Nasi Goreng</option>
-        <option value="MG">Mie Goreng</option>
-        <option value="AB">Ayam Bakar</option>
-      </select>
-    </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </div>
 
-    <div>
-      <label for="topping">Topping</label>
-      <input type="checkbox" name="topping" id="telur">
-      <label for="telur">Telur</label>
-      <input type="checkbox" name="topping" id="keju">
-      <label for="keju">Keju</label>
-      <input type="checkbox" name="topping" id="kerupuk">
-      <label for="kerupuk">Kerupuk</label>
-    </div>
+      <div>
+        <label for="pilihan">Pilihan Kelas</label>
+        <select name="pilihan" id="pilihan">
+          <option value="c">C Languange</option>
+          <option value="f">Flutter</option>
+          <option value="R">React JS</option>
+        </select>
+      </div>
 
-    <div>
-      <label for="lvl">Level Pedas</label>
-      <input type="radio" name="lvl" id="pedas">
-      <label for="pedas">Pedas</label>
-      <input type="radio" name="lvl" id="sedang">
-      <label for="sedang">Sedang</label>
-      <input type="radio" name="lvl" id="tidak">
-      <label for="tidak">Tidak Pedas</label>
-    </div>
+      <div>
+        <p>Pilih Jadwal</p>
+        <input type="radio" name="jadwal" id="weekdays" />
+        <label for="weekdays">Weekdays</label>
+        <input type="radio" name="jadwal" id="weekend" />
+        <label for="weekend">Weekend</label>
+      </div>
 
-    <button type="submit">Pesan Sekarang</button>
-  </form>
-  
-</body>
+      <div>
+        <p>Fasilitas Tambahan</p>
+        <input type="checkbox" name="fasilitas" id="eser" />
+        <label for="eser">E-Sertifikat</label>
+        <input type="checkbox" name="fasilitas" id="modul" />
+        <label for="modul">Modul PDF</label>
+        <input type="checkbox" name="fasilitas" id="rezoom" />
+        <label for="rezoom">Rekaman Zoom</label>
+      </div>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </body>
 </html>
