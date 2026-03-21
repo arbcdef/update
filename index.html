@@ -1,52 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form </title>
-  </head>
-  <body>
-    <h1>Formulir Pendaftaran Bootcamp</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir</title>
+</head>
+<body>
+  <h1>Formulir Beasiswa Prestasi</h1>
 
-    <form action="">
-      <div>
-        <label for="nama">Nama Lengkap</label>
-        <input type="text" id="nama" />
-      </div>
+  <form action="">
+    <div>
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" placeholder="Nama seuai KTM" required>
+      <label for="nim">NIM</label>
+      <input type="number" id="nim" maxlength="6" placeholder="10525060">
+    </div>
 
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" />
-      </div>
+    <div>
+      <label for="email">Email Mahasiswa</label>
+      <input type="email" id="email" required>
+      <label for="pw">Password Akun</label>
+      <input type="password" id="pw" minlength="6" required>
+    </div>
 
-      <div>
-        <label for="pilihan">Pilihan Kelas</label>
-        <select name="pilihan" id="pilihan">
-          <option value="c">C Languange</option>
-          <option value="f">Flutter</option>
-          <option value="R">React JS</option>
-        </select>
-      </div>
+    <div>
+    <label for="ipk">IPK Terakhir</label>
+    <input type="number" step="0.01">
+    </div>
 
-      <div>
-        <p>Pilih Jadwal</p>
-        <input type="radio" name="jadwal" id="weekdays" />
-        <label for="weekdays">Weekdays</label>
-        <input type="radio" name="jadwal" id="weekend" />
-        <label for="weekend">Weekend</label>
-      </div>
+    <div>
+      <label for="prodi">Program Studi</label>
+      <select name="prodi" id="prodi">
+        <option value="si">Sistem Informasi</option>
+        <option value="if">Teknik Informatika</option>
+        <option value="mi">Manajemen Informatika</option>
+      </select>
+    </div>
 
-      <div>
-        <p>Fasilitas Tambahan</p>
-        <input type="checkbox" name="fasilitas" id="eser" />
-        <label for="eser">E-Sertifikat</label>
-        <input type="checkbox" name="fasilitas" id="modul" />
-        <label for="modul">Modul PDF</label>
-        <input type="checkbox" name="fasilitas" id="rezoom" />
-        <label for="rezoom">Rekaman Zoom</label>
-      </div>
+    <div>
+      <input type="checkbox" id="pernyataan" required>
+      <label for="pernyataan">Saya menyatakan data ini benar</label>
+    </div>
 
-      <button type="submit">Daftar Sekarang</button>
-    </form>
-  </body>
+    <button type="submit">Ajukan Beasiswa</button>
+  </form>
+  
+</body>
 </html>
